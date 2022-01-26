@@ -25,19 +25,19 @@ if index == -1:
 // =====================  oop ========================
     
 class Binary:
-def Binary_search(self, arr, item):
-    self.left = 0
-    self.right = len(arr) - 1
-    while self.left <= self.right:
-        middle = ( self.left + self.right) // 2
-        if arr[middle] == item:
-            print('Item found at index ', middle)
-            exit()
-        elif arr[middle] < item:
-            self.left = middle + 1
-        else:
-            self.right = middle - 1
-    return -1
+    def Binary_search(self, arr, item):
+        self.left = 0
+        self.right = len(arr) - 1
+        while self.left <= self.right:
+            middle = ( self.left + self.right) // 2
+            if arr[middle] == item:
+                print('Item found at index ', middle)
+                exit()
+            elif arr[middle] < item:
+                self.left = middle + 1
+            else:
+                self.right = middle - 1
+        return -1
 
 obj = Binary()
 arr = [11, 22, 33, 44, 55, 66, 77, 88, 99, 333, 456]
