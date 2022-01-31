@@ -20,7 +20,7 @@ Insertion.insertion_sort_asc(arr)
 
 print("=========================")
 
-
+# Inserting sort desc
 class Insertion:
     @staticmethod
     def insertion_sort_desc(arr):
